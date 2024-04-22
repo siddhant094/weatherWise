@@ -24,8 +24,6 @@ function App() {
         const handleSubmitRequestForLastPlace = async () => {
             setLoading(true);
             const url = 'https://api.openweathermap.org/data/2.5/weather';
-            const api_key = 'f00c38e0279b7bc85480c3fe775d518c';
-
             const lastAddedPlace = placesList[placesList.length - 1]; // Get the last added place
 
             try {
@@ -33,7 +31,7 @@ function App() {
                     params: {
                         q: lastAddedPlace,
                         units: 'metric',
-                        appid: api_key,
+                        appid: import.meta.env.VITE_API_KEY,
                     },
                 });
                 if (response.error) {
