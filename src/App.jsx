@@ -4,7 +4,6 @@ import WeatherBox from './components/WeatherBox';
 import PlaceBox from './components/PlaceBox';
 import './App.css';
 
-// f31b778fedf26f9ff9ab94868d588fc4
 function App() {
     const [place, setPlace] = useState('');
     const [placesList, setPlacesList] = useState([]);
