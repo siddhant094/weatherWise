@@ -7,11 +7,12 @@ import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <Router>
+        {/* <Router>
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/old' element={<App />} />
             </Routes>
-        </Router>
+        </Router> */}
+        <App />
     </React.StrictMode>
 );

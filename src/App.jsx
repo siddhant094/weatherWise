@@ -85,7 +85,7 @@ function App() {
     return (
         <div className='min-h-screen bg-black text-white'>
             <div className='flex flex-col items-center justify-center gap-5 pt-12'>
-                <h1 className='text-4xl font-medium text-blue-400 bg-'>
+                <h1 className='text-4xl font-medium text-blue-400 text-center'>
                     Place Suggestion App 🌍
                 </h1>
                 <div className='flex w-full items-center justify-center gap-4'>
@@ -131,7 +131,7 @@ function App() {
             <div>
                 {/* {loading && <p>Loading...</p>} */}
                 {!loading && (
-                    <div className='grid grid-flow-row grid-cols-3 px-8 py-5 gap-5'>
+                    <div className='grid md:grid-flow-row md:grid-cols-3 px-8 py-5 gap-5 max-sm:grid-row-1'>
                         {/* <h1>Works outer</h1>{' '} */}
                         {weatherData.map((data, index) => {
                             // console.log('Mapping data:', data);
